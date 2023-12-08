@@ -51,7 +51,7 @@ class String
       end
 
       if j < 0
-        puts "Підрядок знайдено в рядку: #{i}"
+        puts "Підрядок знайдено в позиції: #{i}"
         return i
       else
         skip = [1, j - bad_chars[string[i + j]]].max
@@ -65,6 +65,6 @@ class String
 end
 
 # Приклад використання
-String.boy_moore('Hello, World!', 'World') # Очікуваний результат: Підрядок знайдено в рядку: 7
-String.boy_moore('Ruby is awesome', 'Ruby') # Очікуваний результат: Підрядок знайдено в рядку: 0
+String.boy_moore('Hello, World!', 'World') # Очікуваний результат: Підрядок знайдено в позиції: 7
+String.boy_moore('Ruby is awesome', 'Ruby') # Очікуваний результат: Підрядок знайдено в позиції: 0
 String.boy_moore('Testing the algorithm', 'xyz') # Очікуваний результат: Підрядок не знайдено в рядку
